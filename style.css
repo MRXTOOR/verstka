@@ -270,3 +270,87 @@
     font-size: 18px;
     line-height: 1.5;
 }
+
+.reviews-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.review-card {
+    width: calc((100% / 3) - 20px);
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+}
+
+.review-card video {
+    max-width: 100%;
+    height: auto;
+}
+
+.contact-section {
+    background-color: #1d1d1d;
+    color: #fff;
+    padding: 60px 0;
+}
+
+.contact-section h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.contact-form {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="tel"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: #2d2d2d;
+    color: #fff;
+}
+
+.contact-form input[type="submit"] {
+    padding: 10px 30px;
+    border-radius: 5px;
+    border: none;
+    background-color: #ffcc00;
+    color: #1d1d1d;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.contact-form input[type="submit"]:hover {
+    background-color: #ffdb4d;
+}
+
+.contact-form label {
+    font-size: 18px;
+    margin-bottom: 10px;
+    display: block;
+    width: 100%;
+}
+
+.contact-info {
+    width: 100%;
+    margin-top: 30px;
+}
+
+.contact-info p {
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.contact-info i {
+    margin-right: 10px;
+}
