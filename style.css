@@ -203,10 +203,16 @@ nav a:hover {
     margin-top: 20px;
 }
 
+.game-card a {
+    margin-left: 35%;
+    margin-top: 40%;
+}
+
 .game-card p {
     text-align: center;
     font-size: 16px;
     margin-top: 10px;
+    margin-bottom: 20px;
 }
 
 .events-section {
