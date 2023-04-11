@@ -405,6 +405,11 @@ nav a:hover {
     background-color: #ffdb4d;
 }
 
+.contact-form {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
 .contact-form label {
     font-size: 18px;
     margin-bottom: 10px;
