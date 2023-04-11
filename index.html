@@ -9,7 +9,161 @@
 </head>
 
 <body>
+    <!DOCTYPE html>
+    <html lang="en">
 
-</body>
+    <head>
 
-</html>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Школа игр</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="#">Главная</a></li>
+                    <li><a href="#">Игры</a></li>
+                    <li><a href="#">О компании</a></li>
+                    <li><a href="#">События</a></li>
+                    <li><a href="#">Тренеры</a></li>
+                    <li><a href="#">Отзывы</a></li>
+                </ul>
+            </nav>
+            <div class="hero-section">
+                <h1>Научитесь играть лучше вместе с нами</h1>
+                <img src="hero-image.png" alt="Графическое изображение">
+                <a href="#" class="btn">Записаться на бесплатное пробное занятие</a>
+            </div>
+        </header>
+
+        <main>
+            <section class="games-section">
+                <h2>Наши игры</h2>
+                <div class="games-grid">
+                    <div class="game-card">
+                        <img src="game-logo-1.png" alt="Логотип игры">
+                        <h3>Название игры 1</h3>
+                        <p>10 часов на обучение</p>
+                        <a href="#">Подробнее</a>
+                    </div>
+                    <div class="game-card">
+                        <img src="game-logo-2.png" alt="Логотип игры">
+                        <h3>Название игры 2</h3>
+                        <p>8 часов на обучение</p>
+                        <a href="#">Подробнее</a>
+                    </div>
+                    <!-- Добавьте остальные карточки-ссылки на игры -->
+                </div>
+                <a href="#" class="btn">Посмотреть все игры</a>
+            </section>
+
+            <section class="about-section">
+                <h2>О нашей школе</h2>
+                <p>Описание школы</p>
+                <p>Статистические данные</p>
+            </section>
+
+            <section class="events-section">
+                <h2>Недавние события</h2>
+                <div class="events-grid">
+                    <div class="event-card">
+                        <img src="event-image-1.png" alt="Изображение события">
+                        <h3>Заголовок события 1</h3>
+                        <p>Дата публикации</p>
+                        <a href="#">Подробнее</a>
+                    </div>
+                    <div class="event-card">
+                        <img src="event-image-3.png" alt="Изображение события">
+                        <h3>Заголовок события 3</h3>
+                        <p>Дата публикации</p>
+                        <a href="#">Подробнее</a>
+                    </div>
+                </div>
+                <a class="btn" href="#">Все события</a>
+            </section>
+            <section class="trainers-section">
+                <h2>Наши тренеры</h2>
+                <div class="trainers-grid">
+                    <div class="trainer-card">
+                        <img src="trainer-image-1.png" alt="Фото тренера">
+                        <h3>Имя Фамилия</h3>
+                        <p>Игры и стаж</p>
+                        <p>Небольшое описание тренера</p>
+                    </div>
+                    <div class="trainer-card">
+                        <img src="trainer-image-2.png" alt="Фото тренера">
+                        <h3>Имя Фамилия</h3>
+                        <p>Игры и стаж</p>
+                        <p>Небольшое описание тренера</p>
+                    </div>
+                    <div class="trainer-card">
+                        <img src="trainer-image-3.png" alt="Фото тренера">
+                        <h3>Имя Фамилия</h3>
+                        <p>Игры и стаж</p>
+                        <p>Небольшое описание тренера</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="reviews-section">
+                <h2>Отзывы клиентов</h2>
+                <div class="reviews-grid">
+                    <div class="review-card">
+                        <iframe src="https://www.youtube.com/embed/VIDEO_ID" allowfullscreen></iframe>
+                        <p>Имя Фамилия</p>
+                    </div>
+                    <div class="review-card">
+                        <iframe src="https://www.youtube.com/embed/VIDEO_ID" allowfullscreen></iframe>
+                        <p>Имя Фамилия</p>
+                    </div>
+                    <div class="review-card">
+                        <iframe src="https://www.youtube.com/embed/VIDEO_ID" allowfullscreen></iframe>
+                        <p>Имя Фамилия</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="contact-section">
+                <h2>Записаться на бесплатное пробное занятие</h2>
+                <form class="contact-form">
+                    <label for="name-input">Введите имя</label>
+                    <input id="name-input" type="text" name="name" required>
+                    <label for="phone-input">Введите телефон</label>
+                    <input id="phone-input" type="tel" name="phone" required>
+                    <div class="checkbox-wrapper">
+                        <input id="terms-checkbox" type="checkbox" name="terms" required>
+                        <label for="terms-checkbox">Я согласен с условиями соглашения</label>
+                    </div>
+                    <button class="btn" type="submit">Отправить</button>
+                </form>
+                </form>
+                </div>
+                <!-- Конец формы записи на бесплатное пробное занятие -->
+        </main>
+        <!-- Начало футера -->
+        <footer>
+            <div class="footer-top">
+                <div class="footer-logo">
+                    <img src="logo-footer.png" alt="Логотип школы">
+                </div>
+                <div class="footer-menu">
+                    <ul>
+                        <li><a href="#">Главная</a></li>
+                        <li><a href="#">Все игры</a></li>
+                        <li><a href="#">Недавние события</a></li>
+                        <li><a href="#">О нас</a></li>
+                        <li><a href="#">Тренеры</a></li>
+                        <li><a href="#">Отзывы</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2023 Все права защищены</p>
+            </div>
+        </footer>
+        <!-- Конец футера -->
+    </body>
+
+    </html>
