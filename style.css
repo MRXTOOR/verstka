@@ -354,3 +354,59 @@
 .contact-info i {
     margin-right: 10px;
 }
+
+
+/* Footer */
+
+footer {
+    background-color: #222;
+    color: #fff;
+    font-size: 1.2rem;
+    padding: 50px;
+}
+
+
+/* Footer top */
+
+.footer-top {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* Footer logo */
+
+.footer-logo img {
+    width: 150px;
+    height: auto;
+}
+
+
+/* Footer menu */
+
+.footer-menu {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-menu ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-menu li {
+    margin: 0 20px;
+}
+
+.footer-menu a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-menu a:hover {
+    text-decoration: underline;
+}
