@@ -247,14 +247,16 @@ nav a:hover {
 
 .events-section {
     background-color: #ffffff;
-    padding: 80px 0;
-    transition: 1s linear;
-    color: #ffffff;
+    padding: 80 0;
+    transition: 0.2s linear;
 }
 
 .events-section:hover {
     background-color: #070707;
     padding: 80px 0;
+}
+
+.events-section:hover h2 {
     color: #ffffff;
 }
 
