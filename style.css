@@ -7,6 +7,33 @@
     font-family: 'Roboto', sans-serif;
 }
 
+nav {
+    background-color: #000000;
+    border: 1px solid #ffffff;
+    padding: 10px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav li {
+    margin: 0 1rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    padding: 0.5rem;
+    display: block;
+}
+
+nav a:hover {
+    color: #f00;
+}
+
 .hero-section {
     background-color: #000;
     color: #fff;
