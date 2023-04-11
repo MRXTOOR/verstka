@@ -383,6 +383,15 @@ nav a:hover {
     overflow: hidden;
 }
 
+.reviews-section h2 {
+    margin-bottom: 20px;
+}
+
+.review-card p {
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
 .review-card video {
     max-width: 100%;
     height: auto;
@@ -390,7 +399,7 @@ nav a:hover {
 
 .contact-section {
     background-color: #1d1d1d;
-    color: #fff;
+    color: #ffffff;
     padding: 60px 0;
 }
 
@@ -413,7 +422,7 @@ nav a:hover {
     border-radius: 5px;
     border: none;
     background-color: #2d2d2d;
-    color: #fff;
+    color: #ffffff;
 }
 
 .contact-form input[type="submit"] {
