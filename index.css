@@ -524,8 +524,8 @@ hr {
 }
 
 .review-card {
-    width: calc((100% / 3) - 20px);
-    margin: 10px;
+    margin-left: auto;
+    margin-right: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
