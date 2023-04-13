@@ -115,9 +115,15 @@ nav a:hover {
     margin-bottom: 40px;
 }
 
-.about-section {
+.about-section:before {
     background-color: #fff;
     padding: 80px 0;
+    transition: all 2s ease-in-out;
+}
+
+.about-section:hover {
+    background: rgb(255, 255, 255);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(138, 255, 174, 0.6839110644257703) 54%, rgba(0, 212, 255, 0) 100%);
 }
 
 .about-section h2 {
