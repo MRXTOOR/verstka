@@ -11,6 +11,10 @@
     list-style-type: none;
 }
 
+body {
+    min-width: 320px;
+}
+
 nav {
     background-color: #000000;
     border: 1px solid #181818;
@@ -32,10 +36,45 @@ nav a {
     color: #fff;
     padding: 0.5rem;
     display: block;
+    font-size: 20px;
+}
+
+#checkbox {
+    display: none;
+}
+
+.hamberger {
+    display: none;
+    cursor: pointer;
+}
+
+.hamberger-line {
+    background-color: #FFC107;
+    display: block;
+    position: relative;
+    width: 24px;
+}
+
+.hamberger-line::before,
+.hamberger-line::after {
+    background-color: #FFC107;
+    content: '';
+    display: block;
+    position: absolute;
+    transition: all .3s;
+    width: 100%;
+}
+
+.hamberger-line::before {
+    top: 7px;
+}
+
+.menu {
+    display: flex;
 }
 
 nav a:hover {
-    color: rgb(100, 255, 255);
+    color: rgb(136, 255, 0);
 }
 
 .hero-section {
@@ -115,15 +154,15 @@ nav a:hover {
     margin-bottom: 40px;
 }
 
-.about-section:before {
+.about-section {
     background-color: #fff;
     padding: 80px 0;
-    transition: all 2s ease-in-out;
+    transition: all 0.2s ease-in;
+    margin: 30px 0px 30px 0px;
 }
 
 .about-section:hover {
-    background: rgb(255, 255, 255);
-    background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(138, 255, 174, 0.6839110644257703) 54%, rgba(0, 212, 255, 0) 100%);
+    background-color: #ffee00;
 }
 
 .about-section h2 {
