@@ -39,56 +39,138 @@ nav a {
     font-size: 20px;
 }
 
-#checkbox {
-    display: none;
+..menu__btn {}
+
+.menu__btn>span,
+.menu__btn>span::before,
+.menu__btn>span::after {
+    transition-duration: .25s;
 }
 
-.hamberger {
-    display: none;
-    cursor: pointer;
+.menu__box {
+    transition-duration: .25s;
 }
 
-.hamberger-line {
-    background-color: #FFC107;
+.menu__item {
+    transition-duration: .25s;
+}
+
+#menu__toggle:checked~.menu__btn>span {
+    transform: rotate(45deg);
+}
+
+#menu__toggle:checked~.menu__btn>span::before {
+    top: 0;
+    transform: rotate(0);
+}
+
+#menu__toggle:checked~.menu__btn>span::after {
+    top: 0;
+    transform: rotate(90deg);
+}
+
+#menu__toggle:checked~.menu__box {
+    visibility: visible;
+    left: 0;
+}
+
+
+/* контейнер меню */
+
+.menu__box {
+    border-radius: 20px;
     display: block;
-    position: relative;
-    width: 24px;
+    position: fixed;
+    visibility: hidden;
+    left: -100%;
+    width: 300px;
+    height: 100%;
+    padding: 80px 0;
+    list-style: none;
+    text-align: center;
+    background-color: #ECEFF1;
+    box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
 }
 
-.hamberger-line::before,
-.hamberger-line::after {
-    background-color: #FFC107;
-    content: '';
+
+/* элементы меню */
+
+.menu__item {
+    display: block;
+    padding: 12px 24px;
+    color: #333;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.menu__item:hover {
+    background-color: #CFD8DC;
+}
+
+
+/* скрываем чекбокс */
+
+#menu__toggle {
+    opacity: 0;
+}
+
+
+/* стилизуем кнопку */
+
+.menu__btn {
+    display: flex;
+    /* используем flex для центрирования содержимого */
+    align-items: center;
+    /* центрируем содержимое кнопки */
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+
+/* добавляем "гамбургер" */
+
+.menu__btn>span,
+.menu__btn>span::before,
+.menu__btn>span::after {
     display: block;
     position: absolute;
-    transition: all .3s;
     width: 100%;
+    height: 2px;
+    background-color: #616161;
 }
 
-.hamberger-line::before {
-    top: 7px;
+.menu__btn>span::before {
+    content: '';
+    top: -8px;
 }
 
-.menu {
-    display: flex;
-}
-
-nav a:hover {
-    color: rgb(136, 255, 0);
+.menu__btn>span::after {
+    content: '';
+    top: 8px;
 }
 
 .hero-section {
-    background-color: #000;
-    color: #fff;
+    background-color: #ffffff;
+    color: #000000;
     padding: 50px;
     display: flex;
+    width: auto;
+    margin-right: auto;
+    margin-left: auto;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
 .hero-section img {
-    width: 30%;
+    width: 100%;
 }
 
 .hero-section h1 {
